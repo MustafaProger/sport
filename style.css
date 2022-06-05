@@ -100,9 +100,8 @@ a:hover:after {
 .our_advantages-block {
     background-color: white;
     margin-top: 200px;
-    padding-bottom: 300px;
+    padding-bottom: 210px;
 }
-
 
 
 .our_advantages-title {
@@ -134,6 +133,10 @@ a:hover:after {
     transition-duration: 0.5s;
 
    } 
+.advantages_border {
+    transition: .35s;
+}
+
 
 .our_advantages {
     text-align: center;
