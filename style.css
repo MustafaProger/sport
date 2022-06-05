@@ -115,7 +115,10 @@ a:hover:after {
 
 }
 
-.advantages{
+.advantages {
+    display: inline-block;
+}
+.advantages_border{
     display: inline-block;
     margin: 10px;
     margin-left: 20px;
@@ -124,14 +127,13 @@ a:hover:after {
     border: 3px solid transparent;
 }
 
-
-.advantages:hover {
+.advantages_border:hover {
     border: 3px solid #65994C; /* Параметры рамки */
     border-radius: 10px; /* Радиус скругления */
     transition:  0.5s; /* Время эффекта */
     transition-duration: 0.5s;
 
-   }
+   } 
 
 .our_advantages {
     text-align: center;
@@ -142,7 +144,6 @@ a:hover:after {
     font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 500;
     color: green;
-
 }
 
 .advantages_img {
