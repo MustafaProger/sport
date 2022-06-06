@@ -1,5 +1,6 @@
 body {
-    background-image: url(background_1.jpeg );
+    background: url(backgrounds/background_1.jpg) no-repeat center center fixed;
+    background-size: cover;
     background-attachment: fixed;
     font-family: "Oswald",sans-serif;
     padding: 0;
@@ -10,7 +11,7 @@ a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 300;
     padding-bottom: 3px;
     position: relative;
     cursor: pointer;
