@@ -7,6 +7,7 @@ body {
     margin: 0;
 }
 
+
 a {
     text-decoration: none;
     color: #fff;
@@ -48,6 +49,7 @@ a:hover:after {
      
 
 .basic_url {
+    
     list-style-type: none; /* Убираем маркеры */
     display: inline-block;
     padding-left: 50px;
@@ -105,7 +107,8 @@ a:hover:after {
 }
 
 
-.our_advantages-title {
+.our_advantages-title, 
+.about_us-title {
     padding-top: 50px;
     font-size: 3.3rem;
     font-weight: 900;
@@ -167,3 +170,14 @@ a:hover:after {
     padding: 0px 30px;
 }
 
+.about_us {
+    background: url(backgrounds/background_2.webp) no-repeat center center fixed;
+    margin: 0;
+}
+.about_us-title {
+    margin: 0;
+}
+
+.about_us-block{
+    height: 500px;
+}
