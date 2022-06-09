@@ -47,7 +47,6 @@ a:hover:after {
      
 
 .basic_url {
-    
     list-style-type: none; /* Убираем маркеры */
     display: inline-block;
     padding-left: 50px;
@@ -66,7 +65,7 @@ a:hover:after {
     font-family: "Muli",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
-.heading_1 {
+h1 {
     font-size: 3.3rem;
     font-weight: 900;
     color: #fff;
@@ -171,6 +170,7 @@ a:hover:after {
 .about_us {
     background: url(backgrounds/young-healthy-man-athlete-doing-exercise-with-the-ropes-in-gym-single-male-model-practicing-hard-and-training-his-upper-body-concept-of-healthy-lifestyle-sport-fitness-bodybuilding-wellbeing.jpg) no-repeat center center fixed;
     background-size: cover;
+    padding-bottom: 100px;
 }
 
 .about_us-block {
@@ -180,9 +180,7 @@ a:hover:after {
 
 .about_us-title {
     color: #fff;
-    
 }
-
 
 .about_us-text {
     text-align: center;
@@ -190,5 +188,68 @@ a:hover:after {
     font-weight: 300;
     line-height: 1.7;
     color: #fff;
- }
+}
+.get_started{
+    padding-bottom: 4px;
+    border-bottom: 1px solid white;
+}
 
+.schedule-block {
+    background-color: #151515;
+  
+}
+
+.schedule {
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+.schedule-title {
+    color:#fff;
+    margin-top: 0;
+    padding-top: 100px;
+
+}
+
+.classtime-table{
+    color: white;
+    text-align: center;
+}
+
+.classtime-table table tbody, tr, td {
+    text-align: center;
+    width: 100px;
+    position: relative;
+    z-index: 1;
+    line-height: 1.5;
+    text-align: center;
+    background: #212121;
+    padding: 26px 10px 28px;
+    border-right: 1px solid #171717;
+    border-bottom: 1px solid #171717;
+    
+}
+h6 {
+    margin: 0;
+    padding: 0;
+    color: green;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+th {
+    font-size: 15px;
+    padding: 15px 40px;
+    border-collapse: collapse;
+    border-bottom: 2px solid #F56433;
+    border-top: 2px solid #F56433 ;
+    color: #F56433;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.workout-time{
+    font-weight: bold;
+}
