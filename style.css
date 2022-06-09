@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 
-a {
+.top_inks {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
@@ -15,10 +15,10 @@ a {
     position: relative;
     cursor: pointer;
 }
-a:hover{
+.top_inks:hover{
     color: green;
 }
-a:after {
+.top_inks:after {
     color: green;
 	content: "";
     display: block;
@@ -31,7 +31,7 @@ a:after {
     transition: width .5s; /* Время эффекта */
 }
 
-a:hover:after {
+.top_inks:hover:after {
     color: green;
 	content: "";
     width: 100%;
@@ -71,7 +71,7 @@ h1 {
     color: #fff;
 }
 
-.description_under_the_heading_1 {
+.description_under_the_heading_1  {
     font-size: 20px;
     font-weight: 300;
 
@@ -192,7 +192,20 @@ h1 {
 .get_started{
     padding-bottom: 4px;
     border-bottom: 1px solid white;
+    text-decoration: none;
+    color: white;
 }
+
+.get_started:hover{
+    color: green;
+    border-bottom: 1px solid green;
+    transition: .3s;
+}
+
+.get_started {
+    transition: .35s;
+}
+
 
 .schedule-block {
     background-color: #151515;
@@ -208,6 +221,7 @@ h1 {
     color:#fff;
     margin-top: 0;
     padding-top: 100px;
+    margin-bottom: 10px;
 
 }
 
@@ -252,4 +266,295 @@ table {
 
 .workout-time{
     font-weight: bold;
+}
+
+.tabs {
+   position: relative;
+   text-align: center;
+  
+}
+
+.tabs input[type=radio] {
+   display: none;
+}
+
+.tabs label {
+   position: relative;
+   z-index: 1;
+   display: inline-block;
+   width: 130px;
+   height: 30px;
+   line-height: 30px;
+   color: white;
+   font-size: 14px;
+   cursor: pointer;
+}
+
+.switch {
+   position: absolute;
+   top: 0;
+   left: 50%;
+   height: 30px;
+   width: 130px;
+   background: green;
+   border-radius: 40px;
+   transform: translateX(-130px);
+   transition: transform .5s;
+}
+
+.tabs section {
+   display: none;
+   padding: 40px 0 0;
+   animation: scale .7s ease-in-out;
+}
+
+@keyframes scale {
+   0% {
+      transform: scale(0.9);
+      opacity: 0;
+   }
+
+   50% {
+      transform: scale(1.01);
+      opacity: 0.5;
+   }
+
+   100% {
+      transform: scale(1);
+      opacity: 1;
+   }
+}
+
+.tabs #tab1:checked~#content1,
+.tabs #tab2:checked~#content2 {
+   display: block;
+}
+
+.tabs input[type=radio]:checked+label+.switch {
+   color: white;
+}
+
+.tabs input[type=radio]:not(:checked)+label {
+   color: green;
+}
+
+.tabs input[type="radio"]:checked+label+.switch,
+.tabs input[type="radio"]:checked+label:nth-of-type(n)+.switch {
+   transform: translateX(0);
+}
+
+.item-inner {
+   padding: 30px 20px;
+   border-radius: 10px;
+   background: white;
+   box-shadow: 0 2px 40px rgba(47, 43, 50, .2);
+}
+
+.pricing-tables .pricing-item:nth-child(2) .item-inner {
+    color: black;
+    background: white;
+    border: 3px solid green;
+}
+
+.item-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-align: left;
+   padding-bottom: 20px;
+   margin-bottom: 20px;
+   border-bottom: 1px solid #D7D9DB;
+}
+
+.title *,
+.price * {
+   display: block;
+}
+
+.title b,
+.price b {
+   font-size: 18px;
+   margin-bottom: 8px;
+   font-weight: 500;
+}
+
+.title span,
+.price span {
+   font-size: 12px;
+   color: #9c9ba1;
+}
+
+.price {
+   padding: 8px 10px;
+   border-radius: 6px;
+   background: #EFF7FE;
+}
+
+.pricing-tables .pricing-item:nth-child(2) .item-header {
+   border-bottom: 1px solid #222A3E;
+}
+
+.pricing-tables .pricing-item:nth-child(2) .price {
+   background: rgb(239, 247, 254);
+}
+
+.pricing-tables .pricing-item:nth-child(2) .price span {
+   background: rgb(239, 247, 254);
+}
+
+.features,.features_1 {
+   list-style: none;
+   text-align: left;
+   margin-bottom: 30px;
+}
+
+.features li {
+   margin-bottom: 10px;
+   font-size: 14px;
+}
+
+.features li:before {
+   display: inline-block;
+   font-family: Linearicons-Free;
+   font-style: normal;
+   font-weight: 400;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   margin-right: 5px;
+}
+
+.features_1{
+   margin-bottom: 50px;
+}
+
+.features_1 li {
+   margin-bottom: 10px;
+   font-size: 14px;
+}
+
+.features_1 li:before {
+   display: inline-block;
+   font-family: Linearicons-Free;
+   font-style: normal;
+   font-weight: 400;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   margin-right: 5px;
+}
+
+.pricing-button {
+   text-decoration: none;
+   display: block;
+   font-size: 14px;
+   height: 46px;
+   line-height: 46px;
+   border-radius: 6px;
+   text-align: center;
+   transition: .3s linear;
+   border: 2px solid green;
+   background-color: green;
+   color: white;
+   
+}
+
+.pricing-button:hover {
+    background-color: white;
+    color: green;
+    border-color: green;
+}
+
+.button-1 {
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 15px 60px;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing:2.52px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    letter-spacing: 2.52px;
+    transition: ease-in .20s;
+
+}
+
+.button-1:hover{
+    background-color: green;
+    color: white;
+    border-color: green;
+}   
+
+@media(max-width:959px) {
+   .pricing-item {
+      width: 350px;
+      margin: 0 auto 40px;
+   }
+}
+
+@media(min-width:960px) {
+   .tabs section {
+      padding: 50px 0 40px;
+   }
+
+   .pricing-tables {
+      display: flex;
+      margin: 0 -10px;
+   }
+
+   .pricing-item {
+      width: 33.333333333%;
+      padding: 0 10px;
+   }
+}
+
+@media(min-width:1120px) {
+   .pricing-wrapper {
+      width: 100%;
+      max-width: 1060px;
+      margin: 0 auto;
+   }
+}
+ .disabled {
+    color: gray;
+    list-style-image: url(icons/icon-disabled.svg) ;
+    font-weight: lighter;
+}
+
+.able, .able_1 {
+   list-style-image: url(icons/icon-tick-green.svg) ; 
+}
+
+.able_1 {
+    font-weight: bold;
+}
+.tabs {
+    background: #151515;
+    padding-bottom: 100px;
+}
+
+.abonuments-title {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+
+.video {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.abonuments-text,
+.schedule-text {
+    font-weight: 100;
+    color: white;
+    font-size: 22px;
+    margin-top: 5px;
+    text-align: center;
 }
