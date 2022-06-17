@@ -561,8 +561,6 @@ table {
     
 }
 
-
-
 .coutact_us {
     background-color: #f8f9fa!important;
 }
@@ -580,8 +578,6 @@ table {
     padding-bottom: 200px;
 }
 
-
-
 .coutact_us-text {
     margin-top: 15px;
     padding-bottom: 25px;
@@ -591,13 +587,13 @@ table {
     font-size: 1.2rem;
 }
 
-
 .form_control-LN,
 .form_control-FN,
 .form_control-EM,
 .form_control-PN,
 .form_control-TEXT,
 .coutact_us-button{
+    font-size: 17px;
     width: 50%;
     position: relative;
     min-height: 1px;
@@ -620,28 +616,28 @@ table {
 
 .form_control-TEXT {
     height: 250px;
-    line-height: 2.5;
+    line-height: 1.5;
+    resize: vertical;
 }
 
 ::placeholder {
-  font-size: 17px;
+    font-size: 17px;
+    line-height: 1.5;  
 }
 
 input:hover,textarea:hover {
     border: 2.5px solid green;
     transition: .4s;
-    
 }
 
 input,textarea {
     transition: .4s;
-    
 }
 
 .coutact_us-button-block{
     padding-right: 382px;
-    
 }
+
 .coutact_us-button {
     border: none;
     background-color: green;
@@ -650,8 +646,6 @@ input,textarea {
     width: 370px;
     padding: 25px 0 37px 0;
     border-radius: 5px;
-    
-    
 }
 
 .coutact_us-button:hover {
