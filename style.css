@@ -575,7 +575,7 @@ table {
 
 .contact_us-form-block {
     text-align: center;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 .coutact_us-text {
@@ -651,4 +651,114 @@ input,textarea {
 .coutact_us-button:hover {
     border: none;
     cursor: pointer;
+}
+.end_block{
+    background-color: #ffffff;
+    padding-top: 100px;
+    
+}
+h4 {
+    text-transform: uppercase;
+}
+
+
+.program_training-link_1 {
+    list-style-type: none;
+}
+
+.program_training-link_2{
+   text-decoration: none;
+   color: green;
+}
+
+.program_training-link:hover {
+    color: darkgreen;
+    transition: .3s;
+}
+
+.social-media-link {
+    height: 32px;
+    width: 32px;
+}
+
+.get-info-links_1,
+.get-info-links_2 {
+    padding-left: 5px;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+.get-info-icons {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
+.program_training, .block_1,.get_info {
+    display: inline-block;
+}
+
+.block_1 {
+    padding-left: 170px;
+}
+
+.program_training {
+    padding-left: 100px;
+    margin-right: 120px;
+    
+}
+
+.get-info-PH_EM_ADD {
+    margin-top: 150px;
+}
+
+.PH_1, .EM_1, .ADD_1 {
+    margin-bottom: 20px;
+   
+}
+
+.EM_1 {
+    padding-left: 0px;
+}
+
+.call, .email, .address {
+    margin-bottom: 40px;
+
+}
+
+.program_training-link_2{
+    padding-bottom: 20px;
+}
+
+.get-info-links_2 {
+    padding-left: 20px;
+
+}
+
+.about_us_fitness-title,
+.program_training-title,
+.get_info-title {
+    font-size: 24px;
+}
+
+.about_us_fitness-text {
+    font-weight: 200;
+    font-size: 19.85px;
+}
+
+.folow_us {
+    padding-top: 10px;
+}
+
+.program_training-link_1 {
+    font-size: 20px;
+    padding-left: 0;
+    line-height: 2.1;
+    text-align: center;
+}
+.program_training-links {
+    padding-left: 0px;
+    padding-bottom: 50px;
+
 }
