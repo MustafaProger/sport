@@ -1,11 +1,21 @@
+@media (max-width: 1024px)
+    body
+        .advantages
+            &__block
+                grid-template-columns: repeat(1, minmax(100px, 1fr))
+                row-gap: 10px
+                .advantages__item
+                    border: 5px solid $main-color
+    
 @media (max-width: 768px)
     body
         .header
             display: none
 
-        // .promo
-        //     .subtitle
-        //         display: none
+        .promo
+            background-attachment: scroll
+            // .subtitle
+            //     display: none
 
 @media (max-width: 425px)
     body

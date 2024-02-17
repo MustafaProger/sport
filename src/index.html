@@ -32,7 +32,11 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- style -->
     <link rel="stylesheet" href="css/style.min.css">
@@ -64,6 +68,45 @@
             </div>
         </div>
     </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__wrapper">
+                <h1 class="title title_fz48 advantages__title">Наши преимущества</h1>
+                <div class="advantages__block">
+                    <div class="advantages__item" data-aos="fade-down" data-aos-once="true">
+                        <div class="advantages__img"><img src="icons/advantages/clock.png" alt=""></div>
+                        <h3 class="title title_fz24 advantages__title">Эффективность</h3>
+                        <p class="subtitle subtitle_fz18 advantages__descr"> Оптимизируйте личное время с гибкими
+                            тренировками, адаптированными под ваш распорядок. Мы предлагаем эффективные планы, которые
+                            позволяют достигать спортивных целей, улучшая качество жизни и сохраняя баланс.</p>
+                    </div>
+                    <div class="advantages__item" data-aos="fade-down" data-aos-once="true">
+                        <div class="advantages__img"><img src="icons/advantages/coaches.png" alt=""></div>
+                        <h3 class="title title_fz24 advantages__title">Топ Тренеры</h3>
+                        <p class="subtitle subtitle_fz18 advantages__descr">Наши тренеры - сертифицированные
+                            профессионалы с глубокими знаниями. Они создают индивидуализированные тренировочные
+                            программы, нацеленные на улучшение физической формы, наращивание мышечной массы, и повышение
+                            общей выносливости.</p>
+                    </div>
+                    <div class="advantages__item" data-aos="fade-down" data-aos-once="true">
+                        <div class="advantages__img"><img src="icons/advantages/body.png" alt=""></div>
+                        <h3 class="title title_fz24 advantages__title">Идеал Тела</h3>
+                        <p class="subtitle subtitle_fz18 advantages__descr">Мы предлагаем комплексный подход, включающий
+                            не только персонализированные тренировки, но и научно обоснованные рекомендации по питанию,
+                            что обеспечивает достижение идеального телосложения и поддержание здоровья на долгосрочную
+                            перспективу.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- animation AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
