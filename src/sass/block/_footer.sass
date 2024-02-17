@@ -1,0 +1,30 @@
+.footer
+    .container
+        padding: 50px 25px
+    .fitness__title, .fitness__subtitle,  .get-info__title, .follow-us__subtitle
+        color: black
+        text-align: left
+    a
+        text-decoration: none
+        color: black
+    img
+        width: 32px
+        height: 32px
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+        justify-content: space-between
+        max-width: 1200px
+        margin: 0 auto
+        .fitness
+            .follow-us
+                .follow-us__block
+                    display: flex
+                    .follow-us__link
+                        padding: 0 3px
+        .get-info
+            justify-self: end
+            .get-info__item
+                display: flex
+                padding: 10px 0 30px 0
+                gap: 20px
