@@ -1,24 +1,81 @@
-@media (max-width: 1024px)
-    body
-        .advantages
-            &__block
-                grid-template-columns: repeat(1, minmax(100px, 1fr))
-                row-gap: 10px
-                .advantages__item
-                    border: 5px solid $main-color
-    
 @media (max-width: 768px)
     body
         .header
-            display: none
+            .burger__menu
+                display: block
+                position: absolute
+                top: 0
+                right: 25px
+                z-index: 3
+                width: 35px
+                height: 80px
+                &::before,
+                &::after,
+                span
+                    content: ''
+                    position: absolute
+                    right: 0
+                    z-index: 0
+                    width: 35px
+                    height: 2px
+                    background-color: white
+                    transition: all 0.25s
+                &::before
+                    bottom: 50px
+                &::after
+                    bottom: 30px
+                span
+                    bottom: 40px
+            
+                &.active::before
+                    transform: rotate(45deg)
+                    bottom: 35px
+
+                &.active::after
+                    transform: rotate(-45deg)
+                    bottom: 35px
+
+                &.active span
+                    transform: scale(0)
+            .navbar
+                position: fixed
+                top: 0          
+                left: 0
+                z-index: -1
+                width: 300px
+                height: 100%
+                margin-top: 80px
+                padding: 0px 25px 0 25px
+                overflow: auto
+                background: rgba(0, 0, 0, 0.5)
+                backdrop-filter: blur(5px)
+                transform: translateX(-100%)
+                transition: ease-in-out 0.5s
+                .list
+                    position: relative
+                    display: flex
+                    flex-direction: column
+                    justify-content: start
+                    align-items: start
+                    height: 100%
+                    &__item
+                        padding: 10px 0
+                        font-size: 30px
+            .navbar.active
+                transform: translateX(0%)
+            body.lock
+                visibility: hidden
+            
 
         .promo
             background-attachment: scroll
-            // .subtitle
-            //     display: none
-            
+
         .about
             background-attachment: scroll
+
+        .advantages
+            &__block
+                grid-template-columns: repeat(1, minmax(100px, 1fr))
 
 @media (max-width: 425px)
     body

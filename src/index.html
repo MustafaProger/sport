@@ -46,30 +46,31 @@
 
 <body>
     <header class="header">
+        <div class="burger__menu"><span></span></div>
         <nav class="navbar">
             <ul class="list subtitle_fz18">
-                <li class="list__item"><a href="" class="list__hyperlink">Дом</a></li>
-                <li class="list__item"><a href="" class="list__hyperlink">Преимущества</a></li>
-                <li class="list__item"><a href="" class="list__hyperlink">О нас</a></li>
-                <li class="list__item"><a href="" class="list__hyperlink">График</a></li>
-                <li class="list__item"><a href="" class="list__hyperlink">Абонементы</a></li>
-                <li class="list__item"><a href="" class="list__hyperlink">Контакты</a></li>
+                <li class="list__item"><a href="#promo" class="list__hyperlink">Дом</a></li>
+                <li class="list__item"><a href="#advantages" class="list__hyperlink">Преимущества</a></li>
+                <li class="list__item"><a href="#about" class="list__hyperlink">О нас</a></li>
+                <li class="list__item"><a href="#training" class="list__hyperlink">График</a></li>
+                <li class="list__item"><a href="#" class="list__hyperlink">Абонементы</a></li>
+                <li class="list__item"><a href="#" class="list__hyperlink">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="promo">
+    <section class="promo" id="promo">
         <div class="container">
             <div class="promo__wrapper">
                 <h1 class="title title_fz48 promo__title">Как сделать красивую фигуру за короткий промежуток</h1>
                 <p class="subtitle subtitle_fz18 promo__subtitle">Моя команда и я помогаем людям создать красивое
                     телосложение за короткий промежуто времени. Вы думаете, что это нереально, мы переубедим вас!</p>
-                <a href="" class="btn promo__btn">читать далее</a>
+                <a href="#advantages" class="btn promo__btn">читать далее</a>
             </div>
         </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
             <div class="advantages__wrapper">
                 <h1 class="title title_fz48 advantages__title">Наши преимущества</h1>
@@ -102,20 +103,80 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__wrapper">
-                <h1 class="title title_fz48">О нас</h1>
-                <p class="subtitle subtitle_fz18">Наш спортивный центр представляет собой уникальное место, где каждый может найти что-то для себя, независимо от уровня физической подготовки и спортивных предпочтений. Мы стремимся создать атмосферу мотивации и поддержки, предлагая широкий спектр тренировочных программ, разработанных нашими высококвалифицированными тренерами. Наша цель - помочь вам достигнуть оптимального здоровья и физической формы через индивидуальный подход и инновационные методики тренировок. Присоединяйтесь к нам, чтобы вдохновляться, расти и достигать новых вершин вместе с сообществом единомышленников.</p>
+                <h1 class="title title_fz48" data-aos="fade-down" data-aos-once="true">О нас</h1>
+                <p class="subtitle subtitle_fz18" data-aos="fade-down" data-aos-once="true">Наш спортивный центр
+                    представляет собой уникальное место, где каждый может найти что-то для себя, независимо от уровня
+                    физической подготовки и спортивных предпочтений. Мы стремимся создать атмосферу мотивации и
+                    поддержки, предлагая широкий спектр тренировочных программ, разработанных нашими
+                    высококвалифицированными тренерами.</p>
             </div>
         </div>
     </section>
+
+    <section class="training" id="training">
+        <div class="container">
+            <div class="training__wrapper">
+                <h1 class="title title_fz48" data-aos="fade-down" data-aos-once="true">График тренировок</h1>
+                <p class="subtitle subtitle_fz18" data-aos="fade-down" data-aos-once="true">Разнообразие программ для
+                    достижения ваших целей</p>
+                <ul class="list">
+                    <li class="list__item" data-aos="fade-down" data-aos-once="true">Каратэ
+                        <ul class="list-timeline">
+                            <li class="list-timeline__item"><span>Понедельник: </span>18:00 - 19:30</li>
+                            <li class="list-timeline__item"><span>Среда: </span>16:30 - 18:00</li>
+                            <li class="list-timeline__item"><span>Пятница: </span>19:00 - 20:30</li>
+                        </ul>
+                    </li>
+                    <li class="list__item" data-aos="fade-down" data-aos-once="true">Джиу-джитсу
+                        <ul class="list-timeline">
+                            <li class="list-timeline__item"><span>Вторник: </span>19:00 - 20:30</li>
+                            <li class="list-timeline__item"><span>Четверг: </span>20:45 - 22:15</li>
+                            <li class="list-timeline__item"><span>Суббота: </span>10:00 - 11:30</li>
+                            <li class="list-timeline__item"><span>Воскресенье: </span>09:00 - 10:30</li>
+                        </ul>
+                    </li>
+                    <li class="list__item" data-aos="fade-down" data-aos-once="true">Тайский бокс
+                        <ul class="list-timeline">
+                            <li class="list-timeline__item"><span>Понедельник: </span>20:45 - 22:15</li>
+                            <li class="list-timeline__item"><span>Среда: </span>19:00 - 20:30</li>
+                            <li class="list-timeline__item"><span>Пятница: </span>17:15 - 18:45</li>
+                        </ul>
+                    </li>
+                    <li class="list__item" data-aos="fade-down" data-aos-once="true">Бокс
+                        <ul class="list-timeline">
+                            <li class="list-timeline__item"><span>Вторник: </span>18:00 - 19:30</li>
+                            <li class="list-timeline__item"><span>Четверг: </span>17:15 - 18:45</li>
+                            <li class="list-timeline__item"><span>Суббота: </span>12:00 - 13:30</li>
+                            <li class="list-timeline__item"><span>Воскресенье: </span>11:00 - 12:30</li>
+                        </ul>
+                    </li>
+                    <li class="list__item" data-aos="fade-down" data-aos-once="true">Дзюдо
+                        <ul class="list-timeline">
+                            <li class="list-timeline__item"><span>Понедельник: </span>17:00 - 18:30</li>
+                            <li class="list-timeline__item"><span>Среда: </span>20:45 - 22:15</li>
+                            <li class="list-timeline__item"><span>Пятница: </span>18:00 - 19:30</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--подключение jquery в стиле min-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- animation AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <!-- подключение моих скриптов -->
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
