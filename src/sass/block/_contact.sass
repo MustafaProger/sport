@@ -1,0 +1,48 @@
+.contact 
+	.contact__wrapper
+		max-width: 800px
+		text-align: center
+		margin: 0 auto
+	&__button 
+		display: block
+		width: 300px
+		margin: 10px 0 0 0
+		padding: 25px 0
+		color: white
+		font-size: 18px
+		background-color: $main-color
+		border: none
+		border-radius: 10px
+		font-family: 'Montserrat', sans-serif
+		margin-right: auto
+		&:hover 
+			border: none
+			cursor: pointer
+	&__title, &__subtitle 
+		color: #000
+
+form 
+	padding-right: 10px
+
+input, textarea 
+	width: 100%
+	padding: 0 15px
+	font-size: 18px
+	height: 50px
+	margin-top: 15px
+	border: 2px solid rgb(206, 212, 218, 0.7)
+	border-radius: 10px
+	outline: 0
+	transition: 0.4s
+	&:focus 
+		border: 2px solid $main-color
+
+::placeholder 
+	font-size: 18px
+	line-height: 1.5
+
+.comment
+	padding-top: 15px
+	height: 250px
+	line-height: 1.5
+	resize: vertical

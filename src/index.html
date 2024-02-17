@@ -54,7 +54,7 @@
                 <li class="list__item"><a href="#about" class="list__hyperlink">О нас</a></li>
                 <li class="list__item"><a href="#training" class="list__hyperlink">График</a></li>
                 <li class="list__item"><a href="#subscription" class="list__hyperlink">Абонементы</a></li>
-                <li class="list__item"><a href="#" class="list__hyperlink">Контакты</a></li>
+                <li class="list__item"><a href="#contact" class="list__hyperlink">Контакты</a></li>
             </ul>
         </nav>
     </header>
@@ -168,11 +168,11 @@
     <section class="subscription" id="subscription">
         <div class="container">
             <div class="subscription__wrapper">
-                <h1 class="title title_fz48">Абонементы</h1>
-                <p class="subtitle subtitle_fz18">Подбери абонимент на свой вкус и цену</p>
+                <h1 class="title title_fz48" data-aos="fade-down" data-aos-once="true">Абонементы</h1>
+                <p class="subtitle subtitle_fz18" data-aos="fade-down" data-aos-once="true">Подбери абонимент на свой
+                    вкус и цену</p>
                 <div class="subscription__block">
-
-                    <div class="subscription__item">
+                    <div class="subscription__item" data-aos="fade-down" data-aos-once="true">
                         <div class="info">
                             <div class="info__descr">
                                 <h5 class="info__title">Smart</h5>
@@ -199,7 +199,7 @@
                         </ul>
                         <button class="btn" type="button">Выбрать</button>
                     </div>
-                    <div class="subscription__item">
+                    <div class="subscription__item" data-aos="fade-down" data-aos-once="true">
                         <div class="info">
                             <div class="info__descr">
                                 <h5 class="info__title">Infinity</h5>
@@ -225,7 +225,7 @@
                         </ul>
                         <button class="btn btn_infinity" type="button">Выбрать</button>
                     </div>
-                    <div class="subscription__item">
+                    <div class="subscription__item" data-aos="fade-down" data-aos-once="true">
                         <div class="info">
                             <div class="info__descr">
                                 <h5 class="info__title">Light</h5>
@@ -256,6 +256,38 @@
         </div>
     </section>
 
+    <section class="map">
+        <div style="position:relative;overflow:hidden;"><a target="_blank"
+                href="https://yandex.ru/maps/org/ddx_fitness/177898372746/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">DDX FITNESS</a><a target="_blank"
+                href="https://yandex.ru/maps/213/moscow/category/fitness_club/184107363/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Фитнес-клуб в Москве</a><a target="_blank"
+                href="https://yandex.ru/maps/213/moscow/category/sports_hall_gym/41430094175/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:28px;">Спортивный, тренажёрный зал в
+                Москве</a><iframe
+                src="https://yandex.ru/map-widget/v1/org/ddx_fitness/177898372746/?ll=37.287783%2C55.622030&z=10.96"
+                width="100%" height="500" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__wrapper">
+                <h1 class="title title_fz48 contact__title">Контакты</h1>
+                <p class="subtitle subtitle_fz18 contact__subtitle">Оставьте заявку на нашем сайте и получите одну
+                    тренировку бесплатно</p>
+                <form action="#" class="contact__form" id="contact__form">
+                    <input type="text" class="name" name="name" placeholder="Имя" required>
+                    <input type="tel" class="phone" name="phone" placeholder="Номер телефона" required>
+                    <input type="email" class="email" name="email" placeholder="Email" required>
+
+                    <textarea class="comment" name="comment" id="" cols="30" rows="10"
+                        placeholder="Опишите, что вам понравилось, а что нет"></textarea>
+                    <button type="submit" class="contact__button">отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
     <!--подключение jquery в стиле min-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
