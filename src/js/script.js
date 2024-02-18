@@ -2,6 +2,7 @@
 
 $(document).ready(function () {
 
+    // работа с меню бургер
     $('.burger__menu').on("click", function() {
         $('.burger__menu').toggleClass("active");
         $('.navbar').toggleClass("active");
@@ -17,5 +18,14 @@ $(document).ready(function () {
             scrollTop: $(href).offset().top
         });
         return false;
+    });
+
+    //добавление фиксированной кнопки page-up
+    $(window).scroll(function () { 
+        if($(window).scrollTop() > 1600) {
+            $('.page-up').fadeIn();
+        } else {
+            $('.page-up').fadeOut();
+        }
     });
 })
