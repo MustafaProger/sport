@@ -14,4 +14,4 @@ The main goal was to reinforce my skills in using Gulp for streamlining developm
 
 ## 🌐 Live Demo
 
-You can view the live version of the website [here](https://mustafaproger.github.io/sport/dist/).
+You can view the live version of the website [here](https://mustafaproger.github.io/sport-website/dist/).
